@@ -31,7 +31,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: phlummox/alpine-podman:0.1
+        tags: phlummox/alpine-podman:0.1, phlummox/alpine-podman:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
